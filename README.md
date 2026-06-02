@@ -77,7 +77,15 @@ After editing the deck in Anki it is possible to export it in the `build` direct
 brainbrew run recipes/anki_to_source.yaml
 ```
 
-Author
+## Audio
+
+The original audio files---as downloaded from Forvo, Wiktionary, and LinguaLibre---are in `audio`.
+To normalize the audio and put it in the media directory, we use:
+
+```bash
+./noramlize-audio.sh
+```
+
 ======
 
 Simone Gaiarin (simgunz@gmail.com)

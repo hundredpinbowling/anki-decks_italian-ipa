@@ -1,6 +1,10 @@
 version = 1
 revision = 3
 requires-python = ">=3.9, <4"
+resolution-markers = [
+    "python_full_version >= '3.10'",
+    "python_full_version < '3.10'",
+]
 
 [[package]]
 name = "brain-brew"
@@ -26,6 +30,77 @@ wheels = [
 ]
 
 [[package]]
+name = "colorama"
+version = "0.4.6"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/d8/53/6f443c9a4a8358a93a6792e2acffb9d9d5cb0a5cfd8802644b7b1c9a02e4/colorama-0.4.6.tar.gz", hash = "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44", size = 27697, upload-time = "2022-10-25T02:36:22.414Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6", size = 25335, upload-time = "2022-10-25T02:36:20.889Z" },
+]
+
+[[package]]
+name = "colorlog"
+version = "6.7.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colorama", marker = "sys_platform == 'win32'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/78/6b/4e5481ddcdb9c255b2715f54c863629f1543e97bc8c309d1c5c131ad14f2/colorlog-6.7.0.tar.gz", hash = "sha256:bd94bd21c1e13fac7bd3153f4bc3a7dc0eb0974b8bc2fdf1a989e474f6e582e5", size = 29920, upload-time = "2022-08-29T14:51:27.945Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/58/43/a363c213224448f9e194d626221123ce00e3fb3d87c0c22aed52b620bdd1/colorlog-6.7.0-py2.py3-none-any.whl", hash = "sha256:0d33ca236784a1ba3ff9c532d4964126d8a2c44f1f0cb1d2b0728196f512f662", size = 11286, upload-time = "2022-08-29T14:51:26.426Z" },
+]
+
+[[package]]
+name = "ffmpeg-normalize"
+version = "1.37.7"
+source = { registry = "https://pypi.org/simple" }
+resolution-markers = [
+    "python_full_version < '3.10'",
+]
+dependencies = [
+    { name = "colorama", marker = "python_full_version < '3.10' and sys_platform == 'win32'" },
+    { name = "colorlog", marker = "python_full_version < '3.10'" },
+    { name = "ffmpeg-progress-yield", marker = "python_full_version < '3.10'" },
+    { name = "mutagen", marker = "python_full_version < '3.10'" },
+    { name = "tqdm", marker = "python_full_version < '3.10'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/3c/2c/bce84f4f3a9dc0fb32b72a732ab0883c9a5827b2dbfade67fd231023e789/ffmpeg_normalize-1.37.7.tar.gz", hash = "sha256:f15f42e5ab80beb9afab969e6918c2cbdcb6fdcef09b8ffb61bef774182f8f9b", size = 34804, upload-time = "2026-05-12T12:49:59.248Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/2b/bb/395b4844ad5b73b18d791a95577fb86c1283168d0e18cd3a3d00dd710042/ffmpeg_normalize-1.37.7-py3-none-any.whl", hash = "sha256:af895a9ea6baa960e65e233f7402e4b171d835d3577b2d452d2dbf5b0ab9434d", size = 41075, upload-time = "2026-05-12T12:49:57.708Z" },
+]
+
+[[package]]
+name = "ffmpeg-normalize"
+version = "1.37.8"
+source = { registry = "https://pypi.org/simple" }
+resolution-markers = [
+    "python_full_version >= '3.10'",
+]
+dependencies = [
+    { name = "colorama", marker = "python_full_version >= '3.10' and sys_platform == 'win32'" },
+    { name = "colorlog", marker = "python_full_version >= '3.10'" },
+    { name = "ffmpeg-progress-yield", marker = "python_full_version >= '3.10'" },
+    { name = "mutagen", marker = "python_full_version >= '3.10'" },
+    { name = "tqdm", marker = "python_full_version >= '3.10'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/88/c4/290adc8153d8ca19f3b29ea5052c3721786bc56543d4c337f6aae90d73d1/ffmpeg_normalize-1.37.8.tar.gz", hash = "sha256:f69495ad84d36b18c60adcb6a473ed69a492c029060cba0d2b6c25b53c0e2f77", size = 35339, upload-time = "2026-05-21T08:12:43.976Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/47/63/6b23cea93cc616b78eed70d0145363c20fd64c3f3951d63cb62e13a8bcd0/ffmpeg_normalize-1.37.8-py3-none-any.whl", hash = "sha256:9d0ecaa01ec40785a9c57f1342c0d01db231ffa8fcb43827d859ae95b10d974c", size = 41650, upload-time = "2026-05-21T08:12:42.408Z" },
+]
+
+[[package]]
+name = "ffmpeg-progress-yield"
+version = "1.1.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "tqdm" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/36/eb/f4836c4c30cef5f26cb0d77fa16938303665f87c1e0f64c2812d00706ecf/ffmpeg_progress_yield-1.1.3.tar.gz", hash = "sha256:79bf782a6d6bf9be64bea1d3b7a0f777f11057705935128a225970db74dedf85", size = 10012, upload-time = "2026-03-30T15:38:45.453Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/fd/c7/c42ce9353ae6b70bd920856a97736ac81e068901fb537126365e6735f1c8/ffmpeg_progress_yield-1.1.3-py3-none-any.whl", hash = "sha256:4eb4948a72414608c7b05c8061aff85ff47e31e33f629abc22d08d0b03196c62", size = 12709, upload-time = "2026-03-30T15:38:44.575Z" },
+]
+
+[[package]]
 name = "italian-ipa"
 version = "2.1.0"
 source = { virtual = "." }
@@ -36,14 +111,26 @@ dependencies = [
 [package.optional-dependencies]
 dev = [
     { name = "bump2version" },
+    { name = "ffmpeg-normalize", version = "1.37.7", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10'" },
+    { name = "ffmpeg-normalize", version = "1.37.8", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "brain-brew", specifier = ">=0.3.6,<0.4.0" },
     { name = "bump2version", marker = "extra == 'dev'", specifier = ">=1.0.1,<2.0.0" },
+    { name = "ffmpeg-normalize", marker = "extra == 'dev'" },
 ]
 provides-extras = ["dev"]
+
+[[package]]
+name = "mutagen"
+version = "1.47.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/81/e6/64bc71b74eef4b68e61eb921dcf72dabd9e4ec4af1e11891bbd312ccbb77/mutagen-1.47.0.tar.gz", hash = "sha256:719fadef0a978c31b4cf3c956261b3c58b6948b32023078a2117b1de09f0fc99", size = 1274186, upload-time = "2023-09-03T16:33:33.411Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b0/7a/620f945b96be1f6ee357d211d5bf74ab1b7fe72a9f1525aafbfe3aee6875/mutagen-1.47.0-py3-none-any.whl", hash = "sha256:edd96f50c5907a9539d8e5bba7245f62c9f520aef333d13392a79a4f70aca719", size = 194391, upload-time = "2023-09-03T16:33:29.955Z" },
+]
 
 [[package]]
 name = "pyyaml"
@@ -193,6 +280,18 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/99/3e/dcb5158d09dc028ada88555a22eeaace8717f4e7bd077d8bfa22ce07e02b/ruamel_yaml_clib-0.2.15-cp39-cp39-musllinux_1_2_x86_64.whl", hash = "sha256:a8220fd4c6f98485e97aea65e1df76d4fed1678ede1fe1d0eed2957230d287c4", size = 726459, upload-time = "2025-11-16T16:14:00.443Z" },
     { url = "https://files.pythonhosted.org/packages/28/e8/4752698aada0a6fef4cef3346d61b5de11304950886cc03354d9af554082/ruamel_yaml_clib-0.2.15-cp39-cp39-win32.whl", hash = "sha256:04d21dc9c57d9608225da28285900762befbb0165ae48482c15d8d4989d4af14", size = 103348, upload-time = "2025-11-16T16:14:01.964Z" },
     { url = "https://files.pythonhosted.org/packages/f8/3b/5db40ece46cff9d9a265fb636722f1f5c1a027c1da09921a6c5693d920be/ruamel_yaml_clib-0.2.15-cp39-cp39-win_amd64.whl", hash = "sha256:27dc656e84396e6d687f97c6e65fb284d100483628f02d95464fd731743a4afe", size = 122500, upload-time = "2025-11-16T16:14:03.018Z" },
+]
+
+[[package]]
+name = "tqdm"
+version = "4.67.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colorama", marker = "sys_platform == 'win32'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/09/a9/6ba95a270c6f1fbcd8dac228323f2777d886cb206987444e4bce66338dd4/tqdm-4.67.3.tar.gz", hash = "sha256:7d825f03f89244ef73f1d4ce193cb1774a8179fd96f31d7e1dcde62092b960bb", size = 169598, upload-time = "2026-02-03T17:35:53.048Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/16/e1/3079a9ff9b8e11b846c6ac5c8b5bfb7ff225eee721825310c91b3b50304f/tqdm-4.67.3-py3-none-any.whl", hash = "sha256:ee1e4c0e59148062281c49d80b25b67771a127c85fc9676d3be5f243206826bf", size = 78374, upload-time = "2026-02-03T17:35:50.982Z" },
 ]
 
 [[package]]
