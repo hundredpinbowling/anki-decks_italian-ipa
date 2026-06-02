@@ -1,0 +1,81 @@
+.card {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: black;
+  background-color: white;
+}
+
+.card1,
+.card2 {
+  background-color: #fff;
+}
+
+.section {
+  margin: 1em 0;
+}
+
+.label {
+  font-size: 0.95em;
+  color: #666;
+  margin-bottom: 0.3em;
+}
+
+.ipa-symbol {
+  font-size: 30px;
+}
+
+.audio {
+  font-size: 25px;
+}
+
+.examples {
+  font-size: 20px;
+  margin-bottom: 0.4em;
+}
+
+.notes {
+  font-size: 12px;
+  text-align: left;
+}
+
+.audiopause {
+  display: none;
+}
+
+.features {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin-top: 0.5em;
+}
+
+.features td {
+  padding: 0.2em 0.4em;
+}
+
+.feature-label {
+  text-align: right;
+  color: grey;
+  width: 45%;
+}
+
+.features td:last-child {
+  text-align: left;
+}
+
+hr.back {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.ipachart {
+  width: 50%;
+  margin: 1em auto 0;
+}

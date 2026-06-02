@@ -1,11 +1,11 @@
 name: IPA vowel
 id: a60aaf4c-3bb1-11ec-ab2e-74e5f984f594
-css_file: src/note_models/IPA vowel/style.css
+css_file: src/note_models/shared/style.css
 sort_field_num: 1
 fields:
 - name: Note ID
   font_size: 10
-- name: IPA phone
+- name: IPA phone symbol
   font: Arial
 - name: IPA phone strict transcription
 - name: IPA phoneme symbol

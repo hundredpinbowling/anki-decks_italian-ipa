@@ -1,6 +1,6 @@
 name: IPA diphthongs
 id: a60b1e46-3bb1-11ec-ab2e-74e5f984f594
-css_file: src/note_models/IPA diphthongs/style.css
+css_file: src/note_models/shared/style.css
 sort_field_num: 1
 fields:
 - name: Note ID

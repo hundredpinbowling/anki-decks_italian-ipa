@@ -1,36 +1,61 @@
-<div class="genlabel">IPA sound:</div>
-<br>
+<div class="section">
+	<div class="label">Pronunciation:</div>
+	<div class="audio">{{Pronunciation sound}}</div>
+</div>
 
-<span class="examples">{{Pronunciation sound}}</span>
-
---
+---
 
 {{FrontSide}}
 
-<hr id=answer>
+<hr id="answer">
 
-<div class="genlabel">IPA phone symbol:</div>
-<br>
-<span class="ipasymbol">[ {{IPA phone symbol}} ]</span>
-
-<br><br>
+<div class="section">
+	<div class="label">IPA phone symbol:</div>
+	<div class="ipa-symbol">[ {{IPA phone symbol}} ]</div>
+</div>
 
 {{#IPA phone strict transcription}}
-<div class="genlabel">IPA phone strict transcription:</div>
-<br>
-<span class="ipasymbol">[ {{IPA phone strict transcription}} ]</span>
-
-<br><br>
+<div class="section">
+	<div class="label">IPA phone strict transcription:</div>
+	<div class="ipa-symbol">[ {{IPA phone strict transcription}} ]</div>
+</div>
 {{/IPA phone strict transcription}}
 
-<div class="genlabel">IPA phoneme symbol:</div>
-<br>
-<span class="ipasymbol">/ {{IPA phoneme symbol}} /</span>
+<div class="section">
+	<div class="label">IPA phoneme symbol:</div>
+	<div class="ipa-symbol">/ {{IPA phoneme symbol}} /</div>
+</div>
 
 <hr class="back">
 
-<div class="genlabel">Examples:</div>
-<br>
-<span class="examples">{{Examples}}</span>
-<span class="pronunciation">{{Example sounds}}</span>
+<div class="section">
+	<div class="label">Examples:</div>
+	<div class="examples">{{Examples}}</div>
+	<div class="audio">{{Example sounds}}</div>
+</div>
 
+<hr class="back">
+
+<table class="features">
+	<tr>
+		<td class="feature-label">Phonation:</td>
+		<td>{{Phonation}}</td>
+	</tr>
+	<tr>
+		<td class="feature-label">Place of articulation:</td>
+		<td>{{Place of articulation}}</td>
+	</tr>
+	<tr>
+		<td class="feature-label">Manner of articulation:</td>
+		<td>{{Manner of articulation}}</td>
+	</tr>
+</table>
+
+{{#Notes}}
+<hr class="back">
+
+<div class="section">
+	<div class="label">Notes:</div>
+	<div class="notes">{{Notes}}</div>
+</div>
+{{/Notes}}

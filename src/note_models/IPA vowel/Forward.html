@@ -1,61 +1,66 @@
-<div class="genlabel">IPA phone symbol:</div>
-<br>
-<span class="ipasymbol">[ {{IPA phone symbol}} ]</span>
-
-<br><br>
+<div class="section">
+	<div class="label">IPA phone symbol:</div>
+	<div class="ipa-symbol">[ {{IPA phone symbol}} ]</div>
+</div>
 
 {{#IPA phone strict transcription}}
-<div class="genlabel">IPA phone strict transcription:</div>
-<br>
-<span class="ipasymbol">[ {{IPA phone strict transcription}} ]</span>
-
-<br><br>
+<div class="section">
+	<div class="label">IPA phone strict transcription:</div>
+	<div class="ipa-symbol">[ {{IPA phone strict transcription}} ]</div>
+</div>
 {{/IPA phone strict transcription}}
 
-<div class="genlabel">IPA phoneme symbol(s):</div>
-<br>
-<span class="ipasymbol">/ {{IPA phoneme symbol}} /</span>
+<div class="section">
+	<div class="label">IPA phoneme symbol:</div>
+	<div class="ipa-symbol">/ {{IPA phoneme symbol}} /</div>
+</div>
 
---
+---
 
 {{FrontSide}}
 
-<hr id=answer>
+<hr id="answer">
 
-<span class="pronunciation">{{Pronunciation sound}}</span>
-<span class="audiopause">[sound:_1s_pause.ogg]</span>
+<div class="section">
+	<div class="label">Pronunciation:</div>
+	<div class="audio">{{Pronunciation sound}}</div>
+	<div class="audiopause">[sound:_1s_pause.ogg]</div>
+</div>
 
-<br><br>
-<div class="genlabel">Examples:</div>
-<br>
-<span class="examples">{{Examples}}</span>
-<span class="pronunciation">{{Example sounds}}</span>
+<div class="section">
+	<div class="label">Examples:</div>
+	<div class="examples">{{Examples}}</div>
+	<div class="audio">{{Example sounds}}</div>
+</div>
 
 <hr class="back">
 
-<table>
+<table class="features">
 	<tr>
-		<td style='text-align: right; color:grey'>Openness:</td>
-		<td style='text-align: left'>{{Openness}}</td>
+		<td class="feature-label">Openness:</td>
+		<td>{{Openness}}</td>
 	</tr>
 	<tr>
-		<td style='text-align: right; color:grey'>Backness:</td>
-		<td style='text-align: left'>{{Backness}}</td>
+		<td class="feature-label">Backness:</td>
+		<td>{{Backness}}</td>
 	</tr>
 	<tr>
-		<td style='text-align: right; color:grey'>Roundedness:</td>
-		<td style='text-align: left'>{{Roundedness}}</td>
+		<td class="feature-label">Roundedness:</td>
+		<td>{{Roundedness}}</td>
 	</tr>
 </table>
 
 {{#Notes}}
 <hr class="back">
 
-<span class="notes">{{Notes}}</span>
+<div class="section">
+	<div class="label">Notes:</div>
+	<div class="notes">{{Notes}}</div>
+</div>
 {{/Notes}}
 
-<br>
-
+{{#IPA vowels chart}}
 <div class="ipachart">
 	{{IPA vowels chart}}
 </div>
+{{/IPA vowels chart}}
