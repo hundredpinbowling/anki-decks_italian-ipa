@@ -19,7 +19,7 @@ Il termine tra parentesi quadre  [] è il nome alternativo comune della caratter
 
 ----------------------------------------------------------------------------------------------------------------
 
-This anki deck is based on the language learning method presented by Gabriel Wyner on fluent-forever.com and
+This Anki deck is based on the language learning method presented by Gabriel Wyner on fluent-forever.com and
 aims to teach you all the International Phonetic Alphabet (IPA) symbols of the Italian language. Differently
 from the [English IPA deck](https://fluent-forever.com/ipa-anki-deck/) provided by Gabriel Wyner this one doesn't
 contains the phonetic articulations cards and contains all the allophones of a single phoneme. Because of this
@@ -47,25 +47,34 @@ The term between brackets [] is a common alternative name of the articulatory fe
 Building the deck
 =================
 
-Configure and activate the virtual environment
+Configure and activate the virtual environment with either `uv` or Poetry:
+
+**`uv`**
+
+```bash
+uv sync --extra dev
+source .venv/bin/activate
+```
+
+**Poetry**:
 
 ```bash
 poetry install
 poetry shell
 ```
 
-Build the anki deck
+Then build the Anki deck:
 
 ```bash
- brainbrew run recipes/source_to_anki.yaml
+brainbrew run recipes/source_to_anki.yaml
 ```
 
-The output is generated in the build directory that can be imported as a deck into anki using the add-on [CrowdAnki](https://ankiweb.net/shared/info/1788670778).
+The output is generated in the build directory that can be imported as a deck into Anki using the add-on [CrowdAnki](https://ankiweb.net/shared/info/1788670778).
 
-After editing the deck in anki it is possibile to export it in the `build` directory and then
+After editing the deck in Anki it is possible to export it in the `build` directory and then
 
 ```bash
- brainbrew run recipes/anki_to_source.yaml
+brainbrew run recipes/anki_to_source.yaml
 ```
 
 Author
