@@ -1,5 +1,4 @@
-Italian IPA Deck
-================
+# Italian IPA Deck
 
 Questo mazzo di anki è basato sul metodo di apprendimento di una lingua presentato da Gabriel Wyner su fluent-forever.com
 e ti insegnerà tutti i simboli dell'Alfabeto Fonetico Internazionale (IPA) della lingua italiana. Diversamente dal
@@ -44,8 +43,7 @@ The term between parenthesis () specifies better the articulatory feature.
 
 The term between brackets [] is a common alternative name of the articulatory feature.
 
-Building the deck
-=================
+## Building the deck
 
 Configure and activate the virtual environment with either `uv` or Poetry:
 
@@ -86,18 +84,18 @@ To normalize the audio and put it in the media directory, we use:
 ./noramlize-audio.sh
 ```
 
-======
+Note that this has already been run and the output is in the repo.
 
-Simone Gaiarin (simgunz@gmail.com)
-
-License
-=======
+## License
 
 This deck is released under the [CreativeCommon BY-NC-SA license](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
 
-References
-==========
+## References
 
 - [simgunz's Blog](http://simgunz.org/projects)
 - [Fluent forever](http://fluent-forever.com)
 
+
+---
+
+Simone Gaiarin (simgunz@gmail.com)
