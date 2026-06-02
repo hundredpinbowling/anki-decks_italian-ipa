@@ -9,7 +9,7 @@ fields:
   font: Arial
 - name: IPA phone strict transcription
 - name: IPA phoneme symbol
-- name: Openess
+- name: Openness
   font_size: 12
 - name: Backness
   font_size: 12
